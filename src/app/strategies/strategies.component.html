@@ -1,8 +1,6 @@
-
-  <table>
-  	<tr>
-  		<td>{{strat.timeframe}}</td>
-  		<td>{{strat.title}}</td>
-  	</tr>
-
-  </table>
+<h2>Strategies</h2>
+<ul class="strats">
+  <li *ngFor="let strat of strats" (click)="onSelect(hero)">
+    <span class="badge">{{strat.timeframe}}</span> {{strat.title}}
+  </li>
+</ul>
