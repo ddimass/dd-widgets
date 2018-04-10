@@ -1,6 +1,14 @@
-<h2>Strategies</h2>
-<ul class="strats">
-  <li *ngFor="let strat of strats" (click)="onSelect(hero)">
-    <span class="badge">{{strat.timeframe}}</span> {{strat.title}}
-  </li>
-</ul>
+
+<div class="strats">
+<img class="logo" src="assets\images\logo.png">
+  <div *ngFor="let strat of strats.items" (click)="onSelect(strat);switch=true" [class.selected]="strat === selectedStrat" class="strat">
+    <div class="timeframe"><span>{{strat.timeframe}}</span></div> <div class="title"><span>{{strat.title}}</span></div>
+  </div>
+  <div *ngIf="hid">
+    <div  (click)="onClose()" class="content">  
+    	<div class='close'> Вернуться </div>
+  	<div innerHTML={{selectedStrat.text}}> </div>
+  	</div>	
+
+</div>
+</div>

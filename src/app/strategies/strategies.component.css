@@ -1,0 +1,91 @@
+
+
+.strat .timeframe {
+	background-color: #862633;
+	transform: skew(-40deg);
+	min-width: 40px;
+	padding-left: 15px;
+	float: left;
+	margin-left: 10px;
+	padding: 7px;
+}
+
+.strat .timeframe span {
+transform: skew(40deg);
+display: block;	
+color: white;
+
+}
+
+.strat {
+	clear: both;
+	overflow: none; 
+	z-index: 104;
+	cursor: pointer;
+	
+}
+
+.strats {
+	padding-left: 15px;
+	border: 0px;
+	border-spacing: 0px;
+	background: #d0d3d4;
+	border-collapse: collapse;
+	overflow: none; 
+}
+.strat .title {
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #d0d3d4;
+	transform: skew(-40deg);
+	float: left;
+	width: 90%;
+	padding: 6px;
+	border-top: 1px solid #862633;
+
+}
+
+.strat .title span {
+transform: skew(40deg);
+display: block;	
+color: white;
+
+}
+.strat .filter {
+	background: #53565a;
+	color: white;
+	width: 80px;
+	padding-left: 40px;
+	float: right;
+	padding: 7px;
+}
+.logo {
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.strat :hover {
+
+}
+.content {
+	position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 15px;
+    width: 100%; /* Full width */
+    background-color:  #d0d3d4; /* Black w/ opacity */
+    cursor: pointer;
+}
+.close {
+	position: fixed;
+	z-index: 1; /* Sit on top */
+	height: 25px;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    background-color:  #862633;
+    cursor: pointer;
+}
